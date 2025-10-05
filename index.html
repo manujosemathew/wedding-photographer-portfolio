@@ -108,7 +108,7 @@
     </a> -->
       </div>
       <div class="button-view-more">
-        <button class="button-view" onclick="window.open('gallery.html','_blank')" >View More</button></a>
+        <button class="button-view" onclick="window.open('gallery.html','_blank')">View More</button></a>
       </div>
 
 
@@ -216,107 +216,107 @@
     </section>
 
     <section class="services-section" id="service-nav">
-  <div class="container service-card-margin">
-    <h2 class="services-title">SERVICES & PRICINGS</h2>
+      <div class="container service-card-margin">
+        <h2 class="services-title">SERVICES & PRICINGS</h2>
 
-    <div class="services-grid">
+        <div class="services-grid">
 
-      <!-- Service 1 -->
-      <div class="service-card">
-        <img src="images/service-card-imgs/1.jpg" alt="Engagement Session">
-        <div class="service-content">
-          <h3>Engagement Session</h3>
-          <p>Romantic, themed photoshoot before the big day — perfect for invites and memories.</p>
-          <ul>
-            <li>Duration 1-4 hour</li>
-            <li>Number of photos 20 - 40</li>
-            <li>Processing time 5-10 days </li>
-            <li>Short Video for IG 1-3</li>
-          </ul>
-          <p class="price">$250 – $400</p>
-          <div class="service-buttons">
-            <button class="btn btn-outline" onclick="openPopup('Engagement Session')">Book Now</button>
+          <!-- Service 1 -->
+          <div class="service-card">
+            <img src="images/service-card-imgs/1.jpg" alt="Engagement Session">
+            <div class="service-content">
+              <h3>Engagement Session</h3>
+              <p>Romantic, themed photoshoot before the big day — perfect for invites and memories.</p>
+              <ul>
+                <li>Duration 1-4 hour</li>
+                <li>Number of photos 20 - 40</li>
+                <li>Processing time 5-10 days </li>
+                <li>Short Video for IG 1-3</li>
+              </ul>
+              <p class="price">$250 – $400</p>
+              <div class="service-buttons">
+                <button class="btn btn-outline" onclick="openPopup('Engagement Session')">Book Now</button>
+              </div>
+            </div>
           </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <img src="images/service-card-imgs/2.jpg" alt="Full Wedding Day">
+            <div class="service-content">
+              <h3>Full Wedding Day</h3>
+              <p>Complete coverage from preparation to reception — your full love story, documented beautifully.</p>
+              <ul>
+                <li>Duration 1-8 hour</li>
+                <li>Number of photos 40 - 70</li>
+                <li>Processing time 8-16 days </li>
+                <li>Short Video for IG 1-5</li>
+              </ul>
+              <p class="price">$700 – $1600</p>
+              <div class="service-buttons">
+                <button class="btn btn-outline" onclick="openPopup('Full Wedding Day')">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <img src="images/service-card-imgs/3.jpg" alt="Candid Moments">
+            <div class="service-content">
+              <h3>Candid Moments</h3>
+              <p>Raw emotions, laughter, and real moments — captured naturally and beautifully.</p>
+              <ul>
+                <li>Duration 1-4 hour</li>
+                <li>Number of photos 20 - 50</li>
+                <li>Processing time 10-20 days </li>
+                <li>Short Video for IG 1-5</li>
+              </ul>
+              <p class="price">$400 – $900</p>
+              <div class="service-buttons">
+                <button class="btn btn-outline" onclick="openPopup('Candid Moments')">Book Now</button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <!-- Service 2 -->
-      <div class="service-card">
-        <img src="images/service-card-imgs/2.jpg" alt="Full Wedding Day">
-        <div class="service-content">
-          <h3>Full Wedding Day</h3>
-          <p>Complete coverage from preparation to reception — your full love story, documented beautifully.</p>
-          <ul>
-            <li>Duration 1-8 hour</li>
-            <li>Number of photos 40 - 70</li>
-            <li>Processing time 8-16 days </li>
-            <li>Short Video for IG 1-5</li>
-          </ul>
-          <p class="price">$700 – $1600</p>
-          <div class="service-buttons">
-            <button class="btn btn-outline" onclick="openPopup('Full Wedding Day')">Book Now</button>
-          </div>
-        </div>
-      </div>
+    <!-- Booking Popup -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">X</span>
+        <h3 id="popup-title">Book Now</h3>
 
-      <!-- Service 3 -->
-      <div class="service-card">
-        <img src="images/service-card-imgs/3.jpg" alt="Candid Moments">
-        <div class="service-content">
-          <h3>Candid Moments</h3>
-          <p>Raw emotions, laughter, and real moments — captured naturally and beautifully.</p>
-          <ul>
-            <li>Duration 1-4 hour</li>
-            <li>Number of photos 20 - 50</li>
-            <li>Processing time 10-20 days </li>
-            <li>Short Video for IG 1-5</li>
-          </ul>
-          <p class="price">$400 – $900</p>
-          <div class="service-buttons">
-            <button class="btn btn-outline" onclick="openPopup('Candid Moments')">Book Now</button>
-          </div>
-        </div>
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <!-- Mobile -->
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <!-- Hours -->
+        <label for="hours">Select Hours:</label>
+        <select id="hours">
+          <option value="1">1 Hour</option>
+          <option value="2">2 Hours</option>
+          <option value="3">3 Hours</option>
+          <option value="4">4 Hours</option>
+          <option value="5">5 Hours</option>
+          <option value="6">6 Hours</option>
+          <option value="7">7 Hours</option>
+          <option value="8">8 Hours</option>
+        </select>
+
+        <button onclick="confirmBooking()">Confirm Book</button>
       </div>
 
     </div>
-  </div>
-</section>
-
-<!-- Booking Popup -->
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <span class="close-btn" onclick="closePopup()">X</span>
-    <h3 id="popup-title">Book Now</h3>
-
-    <!-- Name -->
-    <label for="name">Name:</label>
-    <input type="text" id="name" placeholder="Enter your name" required>
-
-    <!-- Mobile -->
-    <label for="mobile">Mobile:</label>
-    <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
-
-    <!-- Email -->
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Enter your email" required>
-
-    <!-- Hours -->
-    <label for="hours">Select Hours:</label>
-    <select id="hours">
-      <option value="1">1 Hour</option>
-      <option value="2">2 Hours</option>
-      <option value="3">3 Hours</option>
-      <option value="4">4 Hours</option>
-      <option value="5">5 Hours</option>
-      <option value="6">6 Hours</option>
-      <option value="7">7 Hours</option>
-      <option value="8">8 Hours</option>
-    </select>
-
-    <button onclick="confirmBooking()">Confirm Book</button>
-  </div>
-
-</div>
 
 
 
@@ -357,7 +357,8 @@
                       and sensual — I didn’t even dream about it. ★★★★⯨
                     </p>
 
-                    <button class="view-more" onclick="window.location.href='gallery.html#feedback-sec-1'">See photos</button>
+                    <button class="view-more" onclick="window.location.href='gallery.html#feedback-sec-1'">See
+                      photos</button>
                   </div>
                   <div class="feed-img">
                     <img src="images/feedback/f1.jpg" alt="">
@@ -389,7 +390,8 @@
                       front of the camera. ★★★★★
                     </p>
 
-                    <button class="view-more" onclick="window.location.href='gallery.html#feedback-sec-2'">See photos</button>
+                    <button class="view-more" onclick="window.location.href='gallery.html#feedback-sec-2'">See
+                      photos</button>
                   </div>
                   <div class="feed-img">
                     <img src="images/feedback/fdbk-2/f2-6.jpg" alt="">
@@ -421,7 +423,8 @@
                       look at our photos, we relive the day all over again. ★★★★★
                     </p>
 
-                    <button class="view-more"onclick="window.location.href='gallery.html#feedback-sec-3'">See photos</button>
+                    <button class="view-more" onclick="window.location.href='gallery.html#feedback-sec-3'">See
+                      photos</button>
                   </div>
                   <div class="feed-img">
                     <img src="images/feedback/fdbk-3/f3-3.jpg" alt="">
@@ -456,39 +459,37 @@
     <section>
       <div class="query-div">
         <div class="container query-img-background">
-          <div class="div-form">
+          <div class="div-form p-5">
             <h1>STILL HAVE QUESTIONS?</h1>
 
-            <!-- note: novalidate so we handle validation with JS -->
-            <form id="queryForm" novalidate>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" />
-                <div class="invalid-feedback" id="nameError">Please enter your name (min 2 chars).</div>
+            <form id="myForm">
+              <div>
+                <label>Name</label>
+                <input type="text" id="userName" class="form-control">
+                <div class="error" id="nameMsg"></div>
               </div>
 
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" />
-                <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+              <div>
+                <label>Email</label>
+                <input type="email" id="userEmail" class="form-control">
+                <div class="error" id="emailMsg"></div>
               </div>
 
-              <div class="mb-3">
-                <label for="msg" class="form-label">What you want to know about</label>
-                <textarea name="msg" id="msg" class="form-control" rows="4"></textarea>
-                <div class="invalid-feedback" id="msgError">Please enter a message (min 5 chars).</div>
+              <div>
+                <label>What you want to know about</label>
+                <textarea id="userMessage" class="form-control"></textarea>
+                <div class="error" id="messageMsg"></div>
               </div>
 
-              <div class="form-button">
-                <button type="submit" class="btn btn-primary w-100">Submit</button>
-              </div>
+              <button type="submit" class="form-button btn">Submit</button>
             </form>
+
           </div>
         </div>
       </div>
     </section>
 
-<!-- contact -->
+    <!-- contact -->
 
     <section id="contacts">
       <div class="contact-heading">
@@ -505,7 +506,8 @@
             <p><i class="bi bi-telephone-fill"></i><a href="tel:+919876543210">+91 98765 43210</a></p>
             <p><i class="bi bi-envelope-fill"></i> <a href="mailto:someone@example.com">aaron_kyle@gmail.com</a></p>
             <p><i class="bi bi-geo-alt-fill"></i> 221 MG Road, Bengaluru, Karnataka 560001, India</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXtbTsPSPU_qYpK6kBJfAntLbW4PXEFfHFfiQDo7DZFZo85A/viewform?usp=dialog" class="btn-request-call">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXtbTsPSPU_qYpK6kBJfAntLbW4PXEFfHFfiQDo7DZFZo85A/viewform?usp=dialog"
+              class="btn-request-call">
               <i class="bi bi-telephone-fill"></i> Request a Call</a>
 
 
@@ -541,21 +543,21 @@
 
         <div class="sub-input">
           <label for="email">
-            <input type="email" id="emailInput" placeholder="email">
+            <input type="email" id="emailInput1" placeholder="email">
             <a href="#" id="submitLink" title="Subscribe to get sneak peeks of my work">Subscribe</a>
           </label>
         </div>
 
-        
+
         <div id="msgBox" class="d-flex justify-content-center alert">
 
         </div>
 
         <hr>
 
-      <div class="copyright">
-        <p class="text-center">&copy; 202 5Aaron Wedding Photographer. All Rights Reserved.</p>
-      </div>
+        <div class="copyright">
+          <p class="text-center m-0 text-color-copy">&copy;2025 Aaron Wedding Photographer. All Rights Reserved.</p>
+        </div>
 
 
       </div>

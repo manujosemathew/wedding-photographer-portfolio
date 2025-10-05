@@ -588,13 +588,13 @@ article {
   background-position: center; /* keeps center visible */
   width: 100%;
   min-height: 65vh;
-  padding: 30px;
-}
-
-.query-div{
-  margin-top: 100px;
+  padding: 2%;
 
 }
+
+
+
+
 
 .div-form{
   background-color: rgba(245, 242, 242,0.7);
@@ -612,20 +612,46 @@ article {
   font-size: 2rem;
 }
 
-.form-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
 .cont-img{
   background: url(images/bannerc4.jpg);
   width: 100%;
   min-height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
-  /* margin-top: 30px; */
   padding: 30px;
 }
+ input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+input.error-border, textarea.error-border {
+    border: 2px solid red;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.form-button {
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.5s;
+}
+.form-button:hover {
+  background-color: #feae01;
+}
+
 
 
 
@@ -683,6 +709,7 @@ article {
   min-height: 50dvh;
   background-size: cover;
   margin-top: 100px;
+  padding: 10px;
 }
 
 .nav-footer{
@@ -722,6 +749,9 @@ article {
 
 .social-links{
   margin-left: 40px;
+}
+.text-color-copy{
+  color: #595959;
 }
 
 
@@ -1228,10 +1258,9 @@ hr{
   margin: 0;
   }
 
-  .copyright h1{
-    font-size: 10px;
-    
-  }
+  .text-color-copy{
+  font-size: 12px;
+}
 
  
 
@@ -1240,6 +1269,90 @@ hr{
 
 
 
+/* 320px */
+
+@media (max-width:321px){
+  /* main{
+    width: 320px;
+  } */
+    .about-main{
+    width: 320px;
+  }
+  .div-form{
+    top: 5px;
+  }
+
+  .div-form h1{
+    font-size: 1.5rem;
+  }
+  .div-form label{
+    font-size: 0.9rem;
+  }
+   .contact-info{
+    width: 90%;
+  }
+
+  .services-title{
+    font-size: 1.7rem;
+  }
+
+  .services-section{
+    margin-top: 50px;
+  }
+
+  .nav-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+
+.nav-footer-links ul{
+  display:flex;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  
+}
+
+.nav-footer-links{
+  display: flex;
+  justify-content: center;
+}
+
+.nav-footer-links ul a{
+  font-size: 1rem;
+  
+ 
+
+}
+
+.social-links img{
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+
+
+.footer-logo h1{
+  font-family: Kaushan Script;
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+
+.sub-input input{
+  height: 40px;
+}
+.copyright{
+  font-size: 10px;
+}
+
+
+
+}
 /* 320px */
 
 @media (max-width:321px){
